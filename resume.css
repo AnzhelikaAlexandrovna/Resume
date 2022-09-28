@@ -10,7 +10,7 @@ body {
 
 .container {
     max-width: 800px;
-    margin: auto;
+    margin: 0 auto;
     padding-top: 30px;
 }
 
@@ -22,13 +22,6 @@ body {
 
 .info {
     display: flex;
-}
-
-@media (max-widht: 650px) {
-    .info {
-        display: block;
-        text-align: center;
-    } 
 }
 
 .info-text {
@@ -47,7 +40,6 @@ h1 {
 }
 
 .work {
-    width: 100%;
     background-color: #fce6e5;
     border-radius: 10px;
 }
@@ -85,7 +77,6 @@ td, th {
 .hobby {
     background-color: #ebfeea;
     border-radius: 10px;
-    width: 100%;
 }
 
 .hobby h3 {
@@ -150,8 +141,8 @@ a:visited {
 
 .form-group label {
     display: block;
-    font-size: 14px;
-    color: #86898f;
+    font-size: 16px;
+    color: #000000;
 }
 
 .form-group input, .form-group textarea {
@@ -166,6 +157,10 @@ a:visited {
     font-family: inherit;
 }
 
+.form-group input:focus, .form-group textarea:focus {
+    border-bottom: 2px groove #222;
+}
+
 .form-row {
     margin-bottom: 10px;
     display: flex;
@@ -176,7 +171,27 @@ a:visited {
     width: 50%;
 }
 
-@media (max-widht: 650px) {
+/*-------------------650px------------------------*/
+
+@media (max-width: 650px) {
+    .container {
+        max-width: 550px;
+    }
+
+    .info {
+        display: block;
+        text-align: center;
+        
+    } 
+
+    .info-text {
+        margin-left: 0;
+    }
+
+    .hobby, .work {
+        width: auto;
+    }
+
     .form-row {
         display: block;
     }
