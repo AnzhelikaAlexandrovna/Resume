@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 5px;
+    color: #111;
+    background-color: #ddd;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+    display: flex;
+}
+
+@media (max-widht: 650px) {
+    .info {
+        display: block;
+        text-align: center;
+    } 
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.info p {
+    font-style: italic;
+    font-weight: bold;
+    color: #86898f;
+    margin: 0;
+}
+
+h1 {
+    text-decoration: underline #aa85ff;
+}
+
+.work {
+    width: 100%;
+    background-color: #fce6e5;
+    border-radius: 10px;
+}
+
+table {
+    display: table;
+    border: thin solid black;
+    border-collapse: collapse;
+    
+}
+
+td, th {
+    border: thin dotted gray;
+    padding: 5px;
+    text-align: center;
+}
+
+.work td:hover {
+    background: #f3b5b2;
+} 
+
+.social {
+    margin-bottom: 20px;
+}
+
+.social h3 {
+    margin-bottom: 10px;
+}
+
+.hobby, .work {
+    padding: 15px 20px;
+    margin: 20px;
+}
+
+.hobby {
+    background-color: #ebfeea;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.hobby h3 {
+    margin: 0;
+} 
+
+.hobby ul {
+    margin-block-end: 0;
+}
+
+.hobby li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkred;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: #86898f;
+}
+
+.btn {
+    background-color: #111;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/*.form-group {
+    display: inline-block;
+    width: 47%;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    background-color: #ddd;
+    line-height: 30px;
+}*/
+
+.form h3 {
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;     /*Свойства width и height включают в себя значения полей и границ*/
+    border: none;
+    background: transparent;   /*фон становится прозрачным*/
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .form-group {
+    margin-right: 20px;
+    width: 50%;
+}
+
+@media (max-widht: 650px) {
+    .form-row {
+        display: block;
+    }
+
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

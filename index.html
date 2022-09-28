@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, css, резюме, cv, html-разработка"> 
+    <meta name="description" content="Это мой первый проект - Сайт-резюме">   
+    <title>Сайт-резюме</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="info">
+            <img class="avatar" src="Бойченко А.А..jpg" alt="Фото Анжелики">
+            
+            <div class="info-text">
+                <h1>Анжелика</h1>
+                    <p>
+                        Я работаю аудитором в компании ФБК (Финансовые и бухгалтерские 
+                        консультанты). Хочу полностью изменить род деятельности и для 
+                        этого <strong>изучаю язык HTML и CSS.</strong>
+                    </p>
+
+                    <p>
+                        Веду <em>активный образ жизни, занимаюсь различными видами 
+                        спорта, а также интеллектуальные игры.</em>
+                    </p>
+                <div class="social">
+                    <h3><strong>Список социальных сетей:</strong></h3>
+                    
+                    <p>
+                        <a href="https://vk.com/id148183515" target="_blank">Вконтакте</a>
+                        I
+                        <a href="https://t.me/Lika_Alexandrovna" target="_blank">Telegram</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="hobby">
+            <h3>Мое хобби:</h3>
+
+            <ul>
+                <li>Занятия спортом (фитнесс, пляжный волейбол, padel-теннис, настольный теннис)</li>
+                <li>Настольные игры</li>
+                <li>Рисование</li>        
+                <li>Прогулки и прочие активности</li>
+            </ul>
+        </div>
+
+        <div class="work">
+            <h3>Опыт работы:</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>МКК Акс Финанс</td>
+                        <td>Ведущий кредитный специалист</td>
+                        <td>2015-2018</td>
+                    </tr>
+                    <tr>                
+                        <td>ФБК (Финансовые и бухгалтерские консультанты)</td>
+                        <td>Ассистент аудитора</td>
+                        <td>2018-по наст.время</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <form class="form">
+                <h3>Связаться со мной</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea id="message" cols="75" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+
+                <button class="btn" type="submit">Отправить!</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
